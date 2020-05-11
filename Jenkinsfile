@@ -1,5 +1,6 @@
 pipeline {
-    agent {label 'xp'}
+    //agent {label 'xp'}
+    agent none
 
     stages {
         stage ('Compile Stage') {
