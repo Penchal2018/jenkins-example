@@ -1,12 +1,12 @@
 pipeline {
-    agent any
+    agent none
 
     stages {
         stage ('Compile Stage') {
 
             steps {
                 
-                  //  sh 'mvn clean compile'
+                  echo "Compile Stage"
                 
             }
         }
@@ -15,7 +15,7 @@ pipeline {
 
             steps {
                 
-                  //  sh 'mvn test'
+                  echo "Testing Stage"
                 
             }
         }
@@ -24,7 +24,7 @@ pipeline {
         stage ('Deployment Stage') {
             steps {
              
-                   // sh 'mvn --version'
+                   echo "Deployment Stage"
              
             }
         }
